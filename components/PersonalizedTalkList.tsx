@@ -1,6 +1,6 @@
 import { Personalize } from '@uniformdev/context-react';
 import { TalkList } from './TalkList';
-import { formatPersonalizeVariants } from '../lib/formatPersonalizeVariants';
+import { formatPersonalizeVariants } from '../lib/uniform/formatPersonalizeVariants';
 import { IPersonalizedTalkListList } from '../lib/sanity-types';
 
 export function PersonalizedTalkList(props: IPersonalizedTalkListList) {

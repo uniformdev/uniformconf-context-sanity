@@ -1,5 +1,5 @@
 import { PersonalizedVariant } from '@uniformdev/context';
-import { Entry, PersonalizationCriteriaField } from './sanity-types';
+import { Entry, PersonalizationCriteriaField } from '../sanity-types';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function formatPersonalizeVariants<T extends Entry<PersonalizationCriteriaField>>(

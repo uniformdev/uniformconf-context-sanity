@@ -1,7 +1,7 @@
 import { Context, ContextPlugin, enableContextDevTools, ManifestV2 } from '@uniformdev/context';
 import { NextCookieTransitionDataStore } from '@uniformdev/context-next';
 import type { NextPageContext } from 'next';
-import manifest from './intentManifest.json';
+import manifest from './contextManifest.json';
 
 export function createUniformContext(serverContext?: NextPageContext) {
   const plugins: ContextPlugin[] = [enableContextDevTools()];

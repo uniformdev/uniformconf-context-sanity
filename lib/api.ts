@@ -30,6 +30,7 @@ const previewClient = client;
 const getClient = (preview: boolean) => (preview ? previewClient : client);
 
 export const getPageBySlug = async (preview: boolean, slug: string): Promise<IPage | undefined> => {
+  console.log('getPageBySlug', slug);
   const query = `*[_type == 'page' && slug.current == $slug]{
     ...,
     components[]->{

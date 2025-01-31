@@ -1,6 +1,6 @@
 import { Personalize } from '@uniformdev/context-react';
 import { Hero } from './Hero';
-import { formatPersonalizeVariants } from '../lib/formatPersonalizeVariants';
+import { formatPersonalizeVariants } from '../lib/uniform/formatPersonalizeVariants';
 import { IPersonalizedHeroList } from '../lib/sanity-types';
 
 export function PersonalizedHeroList(props: IPersonalizedHeroList) {

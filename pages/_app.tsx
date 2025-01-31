@@ -1,15 +1,21 @@
-import { UniformContext } from '@uniformdev/context-react';
-import type { UniformAppProps } from '@uniformdev/context-next';
-import { createUniformContext } from '../lib/uniformContext';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import '../styles/globals.css';
+import { UniformContext } from "@uniformdev/context-react";
+import type { UniformAppProps } from "@uniformdev/context-next";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
+import { createUniformContext } from "../lib/uniform/uniformContext";
+
+import "../styles/globals.css";
 
 const clientContext = createUniformContext();
 
-function UniformContextApp({ Component, pageProps, serverUniformContext }: UniformAppProps) {
+function UniformContextApp({
+  Component,
+  pageProps,
+  serverUniformContext,
+}: UniformAppProps) {
   return (
-    <UniformContext context={serverUniformContext ?? clientContext}>
+    <UniformContext context={clientContext ?? serverUniformContext}>
       <Navbar />
       <Component {...pageProps} />
       <Footer />
