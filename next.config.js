@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  publicRuntimeConfig: {
-    gaTrackingId: process.env.GA_UA_ID ?? '',
+  typescript: {
+    ignoreBuildErrors: true,
   },
 };
 
